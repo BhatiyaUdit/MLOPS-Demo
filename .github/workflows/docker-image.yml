@@ -33,7 +33,7 @@ jobs:
       run: docker build . --file Dockerfile --tag iris
 
     - name: Tag the Docker image
-      run: docker tag iris:latest udit/iris:latest
+      run: docker tag iris:latest bhatiyaudit785/iris:latest
 
     - name: Push the Docker image
-      run: docker push udit/iris:latest
+      run: docker push bhatiyaudit785/iris:latest
