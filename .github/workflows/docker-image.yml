@@ -30,4 +30,10 @@ jobs:
         
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag iris:$(date +%s)
+      run: docker build . --file Dockerfile --tag iris
+
+    - name: Tag the Docker image
+      run: docker tag iris:latest udit/iris:latest
+
+    - name: Push the Docker image
+      run: docker push udit/iris:latest
