@@ -19,7 +19,7 @@ jobs:
     - name: Activate virtual environment
       run: |
         python -m venv virtual
-        ./virtual/Scripts/activate
+        source virtual/bin/activate
         pip list
         
 
